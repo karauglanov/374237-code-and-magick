@@ -174,7 +174,7 @@
 
   var getFireballSpeed = function (left)  // Скорость фаербола
   {
-    return left = true ? 5 : 2;
+    return left == true ? 5 : 2;
   };
   
   var wizardSpeed = 3; // Скорость мага 
@@ -187,7 +187,7 @@
 
   function getWizardX(width) // Положение мага по горизонтали
   {
-    return (width/2-wizardWidth/2); //width/2
+    return width/2-wizardWidth/2;
   } 
 
   function getWizardY(height) // Положение мага по вертикали
