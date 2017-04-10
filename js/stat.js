@@ -26,7 +26,7 @@ window.renderStatistics = function (ctx, names, times) {
   for (var i = 0 ; i < times.length; i++) {
     var time = times[i];
     if (time > max) {
-      max = time;// Максимальное время
+      max = time;// Максимальное время 
     }
   }
   
