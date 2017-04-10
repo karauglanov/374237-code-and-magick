@@ -43,12 +43,11 @@ window.renderStatistics = function (ctx, names, times) {
    
  //Задаём цвет гистограммы по условию
    if (names[i] == 'Вы') {
-      ctx.strokeStyle = 'rgba(255, 0, 0, 1)' 
-      ctx.fillStyle =  'rgba(255, 0, 0, 1)' 
+      ctx.strokeStyle = 'rgba(255, 0, 0, 1)';
+      ctx.fillStyle =  'rgba(255, 0, 0, 1)';
     }
-
    else  {
-    var k = 'rgba(0, 0, 255, ' + Math.random().toFixed(1); +')'; //Получение прозрачности с помощью случайного числа
+    var k = 'rgba(0, 0, 255, ' + Math.random().toFixed(1) +')'; //Получение прозрачности с помощью случайного числа
  	ctx.strokeStyle = k //'rgba(0, 0, 255, n)'
     ctx.fillStyle = k; //'rgba(0, 0, 255, n)' 
     }
