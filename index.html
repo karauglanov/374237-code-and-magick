@@ -170,14 +170,14 @@
 </template>
 <script type="text/javascript">
 
-  var fireballSize = 22;  // Размер фаербола в пикселях. 
+  var fireballSize = 22;  // Размер фаербола в пикселях.
 
   var getFireballSpeed = function (left)  // Скорость фаербола
   {
     return left == true ? 5 : 2;
   };
-  
-  var wizardSpeed = 3; // Скорость мага 
+
+  var wizardSpeed = 3; // Скорость мага
   var wizardWidth = 70; // Шширина мага
 
   var getWizardHeight = function()// Высота мага
@@ -188,15 +188,17 @@
   function getWizardX(width) // Положение мага по горизонтали
   {
     return width/2-wizardWidth/2;
-  } 
+  }
 
   function getWizardY(height) // Положение мага по вертикали
   {
    //  return height-(height/3*2)+getWizardHeight()/2;
    return height/3+getWizardHeight()/2;
   }
- 
+
 </script>
 <script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="js/stat.js"></script>
+
 </body>
 </html>
