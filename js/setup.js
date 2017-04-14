@@ -28,7 +28,7 @@ var randomNumber = function (wizardData) {
 var wizards = [
   {
     name: WIZARD_NAMES[randomNumber(WIZARD_NAMES)] + ' ' + WIZARD_SURNAME[randomNumber(WIZARD_SURNAME)], // Присвоение имени и фамилии с помощью функции случайного числа
-    coatColor: WIZARD_COATCOLOR[randomNumber(WIZARD_COATCOLOR)],// Присвоение цвета мантии с помощью функции случайного числа
+    coatColor: WIZARD_COATCOLOR[randomNumber(WIZARD_COATCOLOR)], // Присвоение цвета мантии с помощью функции случайного числа
     eyesColor: WIZARD_EYESCOLOR[randomNumber(WIZARD_EYESCOLOR)]// Присвоение ывета глаз с помощью функции случайного числа
   },
   {
