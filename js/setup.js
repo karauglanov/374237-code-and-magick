@@ -26,7 +26,7 @@ function randomItem (arr) {
 
 // Функция создания мага со случайными параметрами
 function generateRandomWizard() {
-    var wizard =  {
+  var wizard = {
       name: randomItem(WIZARD_NAMES) + ' ' + randomItem(WIZARD_SURNAME), // Присвоение имени и фамилии с помощью функции случайного числа
       coatColor: randomItem(WIZARD_COATCOLOR), // Присвоение цвета мантии с помощью функции случайного числа
       eyesColor: randomItem(WIZARD_EYESCOLOR) // Присвоение ывета глаз с помощью функции случайного числа
