@@ -20,17 +20,17 @@ var similarListElement = userDialog.querySelector('.setup-similar-list');
 var similarWizardTemplate = document.querySelector('#similar-wizard-template').content;
 
 // Функция возвращает значения константы (массива) по генератору случайного числа
-function randomItem (arr) {
+function randomItem(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
 // Функция создания мага со случайными параметрами
 function generateRandomWizard() {
   var wizard = {
-      name: randomItem(WIZARD_NAMES) + ' ' + randomItem(WIZARD_SURNAME), // Присвоение имени и фамилии с помощью функции случайного числа
-      coatColor: randomItem(WIZARD_COATCOLOR), // Присвоение цвета мантии с помощью функции случайного числа
-      eyesColor: randomItem(WIZARD_EYESCOLOR) // Присвоение ывета глаз с помощью функции случайного числа
-    };
+    name: randomItem(WIZARD_NAMES) + ' ' + randomItem(WIZARD_SURNAME), // Присвоение имени и фамилии с помощью функции случайного числа
+    coatColor: randomItem(WIZARD_COATCOLOR), // Присвоение цвета мантии с помощью функции случайного числа
+    eyesColor: randomItem(WIZARD_EYESCOLOR) // Присвоение ывета глаз с помощью функции случайного числа
+  };
   return wizard;
 }
 
