@@ -29,67 +29,67 @@ var wizardEyes = setup.querySelector('.wizard-eyes');
 var wizardFireball = setup.querySelector('.setup-fireball-wrap');
 
 // Обработка нажатия клавиши ESC и закрытие окна setup
-var onKeyDown = function(evt) {
+var onKeyDown = function (evt) {
   if (evt.keyCode === 27) {  // Нажата клавиша ESC
     closePopup(); // Вызов функции closePopup
   }
 };
 
 // Открытие окна setup
-var openPopup = function() {
+var openPopup = function () {
   setup.classList.remove('hidden'); // Показываем блок setup, отключаем невидимость, удаляем class 'hidden'
   document.addEventListener('keydown', onKeyDown); // Запуск обработчика нажатия клавиши ESC
 };
 
 // Закрытие окна setup
-var closePopup = function() {
+var closePopup = function () {
   setup.classList.add('hidden'); // Скрываем блок setup, включаем невидимость, добавляем class 'hidden'
   document.removeEventListener('keydown', onKeyDown); // Остановка обработчика нажатия клавиши ESC
 };
 
 // Обрабатываем нажатие левой клавиши мыши на блоке setupOpen
-setupOpen.addEventListener('click', function() {
+setupOpen.addEventListener ('click', function() {
   openPopup(); // Открытие окна setup
 });
 
 // Обрабатываем нажатие клавиши ENTER если блок setupOpen находиться в фокусе
-setupOpen.addEventListener('keydown', function(evt) {
+setupOpen.addEventListener ('keydown', function(evt) {
   if (evt.keyCode === 13) { // Нажата клавиша ENTER
-  openPopup(); // Открытие окна setup
+    openPopup(); // Открытие окна setup
   }
 });
 
 // Обрабатываем нажатие левой клавиши мыши на блоке setupClose
-setupClose.addEventListener('click', function() {
+setupClose.addEventListener ('click', function() {
   closePopup(); // Закрытие окна setup
 });
 
 // Обрабатываем нажатие клавиши ENTER если блок setupClose находиться в фокусе
-setupClose.addEventListener('keydown', function(evt) {
+setupClose.addEventListener ('keydown', function(evt) {
   if (evt.keyCode === 13) { // Нажата клавиша ENTER
-  closePopup(); // Закрытие окна setup
+    closePopup(); // Закрытие окна setup
   }
 });
 
 // Обработка нажатия клавиши ESC на блоке ввода имени setupUserName
-setupUserName.addEventListener('keydown', function(evt) {
+setupUserName.addEventListener ('keydown', function(evt) {
   if (evt.keyCode === 27) { // Нажата клавиша ESC
-  evt.stopPropagation(); // Отменяем на блоке ввода имени setupUserName функцию closePopup по нажатию на клавишу ESC
+    evt.stopPropagation(); // Отменяем на блоке ввода имени setupUserName функцию closePopup по нажатию на клавишу ESC
   }
 });
 
 // Обрабатываем нажатие левой клавиши мыши на блоке wizardCoat
-wizardCoat.addEventListener('click', function() {
+wizardCoat.addEventListener ('click', function() {
   wizardCoat.style.fill = randomItem(WIZARD_COATCOLOR); // Присвоение цвета мантии с помощью функции случайного числа
 });
 
 // Обрабатываем нажатие левой клавиши мыши на блоке wizardEyes
-wizardEyes.addEventListener('click', function() {
+wizardEyes.addEventListener ('click', function() {
   wizardEyes.style.fill = randomItem(WIZARD_EYESCOLOR); // Присвоение цвета глаз с помощью функции случайного числа
 });
 
 // Обрабатываем нажатие левой клавиши мыши на блоке wizardFireball
-wizardFireball.addEventListener('click', function() {
+wizardFireball.addEventListener ('click', function() {
   wizardFireball.style.background = randomItem(WIZARD_FIREBALL); // Присвоение цвета файербола с помощью функции случайного числа
 });
 
